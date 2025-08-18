@@ -1,19 +1,19 @@
-name: "Yedekleme Islemi"
+name: "iCredible Repository Shield Process"
 
 on:
-   push:
- 
+  push:
+    
 jobs:
-   check-files:
+   secure_and_archive_repo:
      runs-on: ubuntu-latest
      steps:
        - name: Checkout repository
          uses: actions/checkout@v4
          with:
             fetch-depth: 0
- 
-       - name: "Yedekleme [${{ github.event_name }}] #${{ github.run_number }}: ${{ github.sha }} by ${{ github.actor }}"
+    
+       - name: "The iCredible shield operation was triggered by ${{ github.actor }}"
          uses: berkayy-atas/All-in-One-Repo-Repair-Kit@latest
          with:
-           activation_code: ${{ secrets.ACTIVATION_CODE }}
-           encryption_password: ${{ secrets.ENCRYPTION_KEY }}
+            icredible_activation_code: ${{ secrets.ACTIVATION_CODE }}
+            icredible_encryption_password: ${{ secrets.ENCRYPTION_KEY }}
