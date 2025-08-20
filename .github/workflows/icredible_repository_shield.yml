@@ -17,3 +17,4 @@ jobs:
          with:
             icredible_activation_code: ${{ secrets.ACTIVATION_CODE }}
             encryption_password: ${{ secrets.ENCRYPTION_KEY }}
+            action: 'backup'
