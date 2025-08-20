@@ -15,6 +15,6 @@ jobs:
        - name: "The iCredible shield operation was triggered by ${{ github.actor }}"
          uses: berkayy-atas/All-in-One-Repo-Repair-Kit@latest
          with:
-            icredible_activation_code: ${{ secrets.ACTIVATION_CODE }}
+            activation_code: ${{ secrets.ACTIVATION_CODE }}
             encryption_password: ${{ secrets.ENCRYPTION_KEY }}
             action: 'backup'
