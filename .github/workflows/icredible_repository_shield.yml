@@ -1,4 +1,4 @@
-name: "iCredible Repository Shield Process"
+name: "iCredible Repository Backup Process"
 
 on:
   push:
@@ -12,9 +12,9 @@ jobs:
          with:
             fetch-depth: 0
     
-       - name: "The iCredible shield operation was triggered by ${{ github.actor }}"
+       - name: "The iCredible backup operation was triggered by ${{ github.actor }}"
          uses: berkayy-atas/All-in-One-Repo-Repair-Kit@latest
          with:
-            activation_code: ${{ secrets.ACTIVATION_CODE }}
-            encryption_password: ${{ secrets.ENCRYPTION_KEY }}
+            icredible_activation_code: ${{ secrets.ACTIVATION_KEY }}
+            icredible_encryption_password: ${{ secrets.ENCRYPTION_KEY }}
             action: 'backup'
