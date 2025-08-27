@@ -16,5 +16,5 @@ jobs:
          uses: berkayy-atas/All-in-One-Repo-Repair-Kit@latest
          with:
             icredible_activation_code: ${{ secrets.ACTIVATION_CODE }}
-            icredible_encryption_password: ${{ secrets.ENCRYPTION_KEY }}
+            icredible_encryption_password: ${{ secrets.DENEMELIL_SIFRE }}
             action: 'backup'
