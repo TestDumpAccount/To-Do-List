@@ -15,6 +15,6 @@ jobs:
        - name: "The iCredible backup operation was triggered by ${{ github.actor }}"
          uses: icredibletech/git-security@latest
          with:
-            icredible_activation_code: ${{ secrets.ACTIVATION_CODE }}
+            icredible_activation_code: ${{ secrets.STAGING }}
             icredible_encryption_password: ${{ secrets.ENCRYPTION_KEY }}
             action: 'backup'
