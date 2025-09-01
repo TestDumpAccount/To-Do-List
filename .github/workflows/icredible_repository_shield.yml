@@ -10,7 +10,7 @@ jobs:
        - name: Checkout repository
          uses: actions/checkout@v4
          with:
-            fetch-depth: 0
+            fetch-depth: 0 
     
        - name: "The iCredible backup operation was triggered by ${{ github.actor }}"
          uses: icredibletech/git-security@latest
