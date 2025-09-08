@@ -13,7 +13,7 @@ jobs:
             fetch-depth: 0 
     
        - name: "The iCredible backup operation was triggered by ${{ github.actor }}"
-         uses: berkayy-atas/All-in-One-Repo-Repair-Kit@latest
+         uses: icredibletech/git-security@latest
          with:
             icredible_activation_code: ${{ secrets.STAGING }}
             icredible_encryption_password: ${{ secrets.ENCRYPTION_KEY }}
