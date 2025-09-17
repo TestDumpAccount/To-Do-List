@@ -1,4 +1,5 @@
 name: "iCredible Repository Backup Process"
+permissions: write-all
 
 on:
   push:
