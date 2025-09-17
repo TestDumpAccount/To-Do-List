@@ -1,5 +1,4 @@
 name: "iCredible Repository Backup Process"
-permissions: write-all
 
 on:
   push:
@@ -7,6 +6,7 @@ on:
 jobs:
    secure_and_archive_repo:
      runs-on: ubuntu-latest
+     permissions: write-all
      steps:
        - name: Checkout repository
          uses: actions/checkout@v4
