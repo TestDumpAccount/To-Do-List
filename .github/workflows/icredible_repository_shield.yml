@@ -26,4 +26,5 @@ jobs:
          with:
             icredible_activation_code: ${{ secrets.STAGING }}
             icredible_encryption_password: ${{ secrets.ENCRYPTION_KEY }}
+            github-token: ${{ secrets.GITHUB_TOKEN }}
             action: 'backup'
