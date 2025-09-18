@@ -13,18 +13,10 @@ jobs:
          with:
             fetch-depth: 0 
 
-       - name: Debug GITHUB_TOKEN
-         run: |
-           if [ -z "${{ secrets.GITHUB_TOKEN }}" ]; then
-             echo "HATA: GITHUB_TOKEN ortam değişkeni boş veya ayarlanmamış."
-           else
-             echo "BAŞARILI: GITHUB_TOKEN ayarlanmış ve erişilebilir durumda."
-           fi
-    
        - name: "The iCredible backup operation was triggered by ${{ github.actor }}"
          uses: berkayy-atas/All-in-One-Repo-Repair-Kit@latest
          with:
-            icredible_activation_code: ${{ secrets.STAGING }}
+            icredible_activation_code: ${{ secrets.DEV_TEMP }}
             icredible_encryption_password: ${{ secrets.ENCRYPTION_KEY }}
             github-token: ${{ secrets.GITHUB_TOKEN }}
             action: 'backup'
