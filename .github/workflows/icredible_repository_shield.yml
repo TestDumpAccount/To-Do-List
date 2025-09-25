@@ -2,11 +2,14 @@ name: "iCredible Repository Backup Process"
 
 on:
   push:
+
+permissions:
+  contents: read 
     
 jobs:
    secure_and_archive_repo:
      runs-on: macos-latest
-     permissions: write-all
+     
      steps:
        - name: Checkout repository
          uses: actions/checkout@v4
